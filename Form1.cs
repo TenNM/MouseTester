@@ -1,11 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
+﻿using System.Collections.Generic;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace MouseTester
@@ -24,54 +18,53 @@ namespace MouseTester
 
         private void Form1_MouseWheel(object sender, MouseEventArgs e)
         {
-            textBoxClickPos.Text = e.Location.ToString();
+            scrollLabelPos = CycleInt(10, scrollLabelPos);
+            textBoxClickPos.Text = scrollLabelPos.ToString();
+
             if (e.Delta > 0)
             {
-                scrollLabels[scrollLabelPos % 10].Text = "/\\";
+                scrollLabels[scrollLabelPos].Text = "/\\";
+                scrollLabels[scrollLabelPos].ForeColor = Color.Green;
                 textBoxButtonName.Text = "Wheel up";
-                scrollLabels[scrollLabelPos % 10].ForeColor = Color.Blue;
+                scrollLabelPos--;
             }
             else
             {
-                scrollLabels[scrollLabelPos % 10].Text = "\\/";
+                scrollLabels[scrollLabelPos].Text = "\\/";
+                scrollLabels[scrollLabelPos].ForeColor = Color.Orange;
                 textBoxButtonName.Text = "Wheel down";
-                scrollLabels[scrollLabelPos % 10].ForeColor = Color.Black;
+                scrollLabelPos++;
             }
-            scrollLabelPos++;
-            
         }
 
         private void Form1_MouseDown(object sender, MouseEventArgs e)
         {
             textBoxClickPos.Text = e.Location.ToString();
             textBoxButtonName.Text = e.Button.ToString();
-            switch (e.Button)
-            {
-                case MouseButtons.Left: panelL.BackColor = downColor; break;
-                case MouseButtons.Middle: panelM.BackColor = downColor; break;
-                case MouseButtons.Right: panelR.BackColor = downColor; break;
-                case MouseButtons.XButton1: panelX1.BackColor = downColor; break;
-                case MouseButtons.XButton2: panelX2.BackColor = downColor; break;
-            }
+            ColorizePanel(downColor, e);
         }
 
         private void Form1_MouseUp(object sender, MouseEventArgs e)
         {
+            ColorizePanel(this.BackColor, e);      
+        }
+
+        private void ColorizePanel(Color c, MouseEventArgs e)
+        {
             switch (e.Button)
             {
-                case MouseButtons.Left: panelL.BackColor = this.BackColor; break;
-                case MouseButtons.Middle: panelM.BackColor = this.BackColor; break;
-                case MouseButtons.Right: panelR.BackColor = this.BackColor; break;
-                case MouseButtons.XButton1: panelX1.BackColor = this.BackColor; break;
-                case MouseButtons.XButton2: panelX2.BackColor = this.BackColor; break;
+                case MouseButtons.Left: panelL.BackColor = c; break;
+                case MouseButtons.Middle: panelM.BackColor = c; break;
+                case MouseButtons.Right: panelR.BackColor = c; break;
+                case MouseButtons.XButton1: panelX1.BackColor = c; break;
+                case MouseButtons.XButton2: panelX2.BackColor = c; break;
             }
         }
 
-        private void ColorizePanel(Color c)
+        private int CycleInt(int n, int i)
         {
-
+            return (i % n + n) % n;
         }
-
-       
+  
     }//class
 }
