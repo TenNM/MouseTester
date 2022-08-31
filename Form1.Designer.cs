@@ -30,6 +30,7 @@
         {
             this.textBoxClickPos = new System.Windows.Forms.TextBox();
             this.panelL = new System.Windows.Forms.Panel();
+            this.numericUpDownL = new System.Windows.Forms.NumericUpDown();
             this.panelM = new System.Windows.Forms.Panel();
             this.panelR = new System.Windows.Forms.Panel();
             this.textBoxButtonName = new System.Windows.Forms.TextBox();
@@ -46,6 +47,20 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
+            this.numericUpDownM = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownR = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownX1 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownX2 = new System.Windows.Forms.NumericUpDown();
+            this.panelL.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownL)).BeginInit();
+            this.panelM.SuspendLayout();
+            this.panelR.SuspendLayout();
+            this.panelX1.SuspendLayout();
+            this.panelX2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownM)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownR)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownX1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownX2)).BeginInit();
             this.SuspendLayout();
             // 
             // textBoxClickPos
@@ -60,15 +75,30 @@
             // panelL
             // 
             this.panelL.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelL.Controls.Add(this.numericUpDownL);
             this.panelL.Enabled = false;
             this.panelL.Location = new System.Drawing.Point(78, 134);
             this.panelL.Name = "panelL";
             this.panelL.Size = new System.Drawing.Size(100, 100);
             this.panelL.TabIndex = 1;
             // 
+            // numericUpDownL
+            // 
+            this.numericUpDownL.Enabled = false;
+            this.numericUpDownL.Location = new System.Drawing.Point(0, 0);
+            this.numericUpDownL.Maximum = new decimal(new int[] {
+            9999,
+            0,
+            0,
+            0});
+            this.numericUpDownL.Name = "numericUpDownL";
+            this.numericUpDownL.Size = new System.Drawing.Size(99, 26);
+            this.numericUpDownL.TabIndex = 0;
+            // 
             // panelM
             // 
             this.panelM.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelM.Controls.Add(this.numericUpDownM);
             this.panelM.Enabled = false;
             this.panelM.Location = new System.Drawing.Point(184, 134);
             this.panelM.Name = "panelM";
@@ -78,6 +108,7 @@
             // panelR
             // 
             this.panelR.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelR.Controls.Add(this.numericUpDownR);
             this.panelR.Enabled = false;
             this.panelR.Location = new System.Drawing.Point(240, 134);
             this.panelR.Name = "panelR";
@@ -95,6 +126,7 @@
             // panelX1
             // 
             this.panelX1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelX1.Controls.Add(this.numericUpDownX1);
             this.panelX1.Enabled = false;
             this.panelX1.Location = new System.Drawing.Point(22, 240);
             this.panelX1.Name = "panelX1";
@@ -104,6 +136,7 @@
             // panelX2
             // 
             this.panelX2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelX2.Controls.Add(this.numericUpDownX2);
             this.panelX2.Enabled = false;
             this.panelX2.Location = new System.Drawing.Point(22, 305);
             this.panelX2.Name = "panelX2";
@@ -219,6 +252,34 @@
             this.label10.TabIndex = 14;
             this.label10.Text = "x";
             // 
+            // numericUpDownM
+            // 
+            this.numericUpDownM.Location = new System.Drawing.Point(0, 0);
+            this.numericUpDownM.Name = "numericUpDownM";
+            this.numericUpDownM.Size = new System.Drawing.Size(49, 26);
+            this.numericUpDownM.TabIndex = 0;
+            // 
+            // numericUpDownR
+            // 
+            this.numericUpDownR.Location = new System.Drawing.Point(0, 0);
+            this.numericUpDownR.Name = "numericUpDownR";
+            this.numericUpDownR.Size = new System.Drawing.Size(99, 26);
+            this.numericUpDownR.TabIndex = 0;
+            // 
+            // numericUpDownX1
+            // 
+            this.numericUpDownX1.Location = new System.Drawing.Point(0, 0);
+            this.numericUpDownX1.Name = "numericUpDownX1";
+            this.numericUpDownX1.Size = new System.Drawing.Size(49, 26);
+            this.numericUpDownX1.TabIndex = 0;
+            // 
+            // numericUpDownX2
+            // 
+            this.numericUpDownX2.Location = new System.Drawing.Point(0, 0);
+            this.numericUpDownX2.Name = "numericUpDownX2";
+            this.numericUpDownX2.Size = new System.Drawing.Size(49, 26);
+            this.numericUpDownX2.TabIndex = 0;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -249,6 +310,16 @@
             this.Text = "Mouse tester by TenNM";
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseDown);
             this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseUp);
+            this.panelL.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownL)).EndInit();
+            this.panelM.ResumeLayout(false);
+            this.panelR.ResumeLayout(false);
+            this.panelX1.ResumeLayout(false);
+            this.panelX2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownM)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownR)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownX1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownX2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -274,6 +345,11 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.NumericUpDown numericUpDownL;
+        private System.Windows.Forms.NumericUpDown numericUpDownM;
+        private System.Windows.Forms.NumericUpDown numericUpDownR;
+        private System.Windows.Forms.NumericUpDown numericUpDownX1;
+        private System.Windows.Forms.NumericUpDown numericUpDownX2;
     }
 }
 
