@@ -7,15 +7,19 @@ namespace MouseTester
 {
     public partial class Form1 : Form
     {
-        Color downColor = Color.GreenYellow;
+        Color downColor;
         List<Label> scrollLabels;
-        int scrollLabelPos = 0;
+        int scrollLabelPos;
         Dictionary<MouseButtons, ButtonInfo> dictButtons;
+
         public Form1()
         {
             InitializeComponent();
             this.MouseWheel += Form1_MouseWheel;
+
+            downColor = Color.GreenYellow;
             scrollLabels = new List<Label> { label1, label2, label3, label4, label5, label6, label7, label8, label9, label10 };
+            scrollLabelPos = 0;
             dictButtons = new Dictionary<MouseButtons, ButtonInfo>()
             {
                 { MouseButtons.Left, new ButtonInfo(panelL, numericUpDownL) },

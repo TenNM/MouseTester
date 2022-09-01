@@ -32,10 +32,14 @@
             this.panelL = new System.Windows.Forms.Panel();
             this.numericUpDownL = new System.Windows.Forms.NumericUpDown();
             this.panelM = new System.Windows.Forms.Panel();
+            this.numericUpDownM = new System.Windows.Forms.NumericUpDown();
             this.panelR = new System.Windows.Forms.Panel();
+            this.numericUpDownR = new System.Windows.Forms.NumericUpDown();
             this.textBoxButtonName = new System.Windows.Forms.TextBox();
             this.panelX1 = new System.Windows.Forms.Panel();
+            this.numericUpDownX1 = new System.Windows.Forms.NumericUpDown();
             this.panelX2 = new System.Windows.Forms.Panel();
+            this.numericUpDownX2 = new System.Windows.Forms.NumericUpDown();
             this.panelCase = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -47,19 +51,15 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.numericUpDownM = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDownR = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDownX1 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDownX2 = new System.Windows.Forms.NumericUpDown();
             this.panelL.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownL)).BeginInit();
             this.panelM.SuspendLayout();
-            this.panelR.SuspendLayout();
-            this.panelX1.SuspendLayout();
-            this.panelX2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownM)).BeginInit();
+            this.panelR.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownR)).BeginInit();
+            this.panelX1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownX1)).BeginInit();
+            this.panelX2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownX2)).BeginInit();
             this.SuspendLayout();
             // 
@@ -87,7 +87,7 @@
             this.numericUpDownL.Enabled = false;
             this.numericUpDownL.Location = new System.Drawing.Point(0, 0);
             this.numericUpDownL.Maximum = new decimal(new int[] {
-            9999,
+            99999,
             0,
             0,
             0});
@@ -105,6 +105,18 @@
             this.panelM.Size = new System.Drawing.Size(50, 100);
             this.panelM.TabIndex = 2;
             // 
+            // numericUpDownM
+            // 
+            this.numericUpDownM.Location = new System.Drawing.Point(0, 0);
+            this.numericUpDownM.Maximum = new decimal(new int[] {
+            99999,
+            0,
+            0,
+            0});
+            this.numericUpDownM.Name = "numericUpDownM";
+            this.numericUpDownM.Size = new System.Drawing.Size(49, 26);
+            this.numericUpDownM.TabIndex = 0;
+            // 
             // panelR
             // 
             this.panelR.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -114,6 +126,18 @@
             this.panelR.Name = "panelR";
             this.panelR.Size = new System.Drawing.Size(100, 100);
             this.panelR.TabIndex = 3;
+            // 
+            // numericUpDownR
+            // 
+            this.numericUpDownR.Location = new System.Drawing.Point(0, 0);
+            this.numericUpDownR.Maximum = new decimal(new int[] {
+            99999,
+            0,
+            0,
+            0});
+            this.numericUpDownR.Name = "numericUpDownR";
+            this.numericUpDownR.Size = new System.Drawing.Size(99, 26);
+            this.numericUpDownR.TabIndex = 0;
             // 
             // textBoxButtonName
             // 
@@ -133,6 +157,18 @@
             this.panelX1.Size = new System.Drawing.Size(50, 50);
             this.panelX1.TabIndex = 2;
             // 
+            // numericUpDownX1
+            // 
+            this.numericUpDownX1.Location = new System.Drawing.Point(0, 0);
+            this.numericUpDownX1.Maximum = new decimal(new int[] {
+            99999,
+            0,
+            0,
+            0});
+            this.numericUpDownX1.Name = "numericUpDownX1";
+            this.numericUpDownX1.Size = new System.Drawing.Size(49, 26);
+            this.numericUpDownX1.TabIndex = 0;
+            // 
             // panelX2
             // 
             this.panelX2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -142,6 +178,18 @@
             this.panelX2.Name = "panelX2";
             this.panelX2.Size = new System.Drawing.Size(50, 50);
             this.panelX2.TabIndex = 3;
+            // 
+            // numericUpDownX2
+            // 
+            this.numericUpDownX2.Location = new System.Drawing.Point(0, 0);
+            this.numericUpDownX2.Maximum = new decimal(new int[] {
+            99999,
+            0,
+            0,
+            0});
+            this.numericUpDownX2.Name = "numericUpDownX2";
+            this.numericUpDownX2.Size = new System.Drawing.Size(49, 26);
+            this.numericUpDownX2.TabIndex = 0;
             // 
             // panelCase
             // 
@@ -252,34 +300,6 @@
             this.label10.TabIndex = 14;
             this.label10.Text = "x";
             // 
-            // numericUpDownM
-            // 
-            this.numericUpDownM.Location = new System.Drawing.Point(0, 0);
-            this.numericUpDownM.Name = "numericUpDownM";
-            this.numericUpDownM.Size = new System.Drawing.Size(49, 26);
-            this.numericUpDownM.TabIndex = 0;
-            // 
-            // numericUpDownR
-            // 
-            this.numericUpDownR.Location = new System.Drawing.Point(0, 0);
-            this.numericUpDownR.Name = "numericUpDownR";
-            this.numericUpDownR.Size = new System.Drawing.Size(99, 26);
-            this.numericUpDownR.TabIndex = 0;
-            // 
-            // numericUpDownX1
-            // 
-            this.numericUpDownX1.Location = new System.Drawing.Point(0, 0);
-            this.numericUpDownX1.Name = "numericUpDownX1";
-            this.numericUpDownX1.Size = new System.Drawing.Size(49, 26);
-            this.numericUpDownX1.TabIndex = 0;
-            // 
-            // numericUpDownX2
-            // 
-            this.numericUpDownX2.Location = new System.Drawing.Point(0, 0);
-            this.numericUpDownX2.Name = "numericUpDownX2";
-            this.numericUpDownX2.Size = new System.Drawing.Size(49, 26);
-            this.numericUpDownX2.TabIndex = 0;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -313,12 +333,12 @@
             this.panelL.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownL)).EndInit();
             this.panelM.ResumeLayout(false);
-            this.panelR.ResumeLayout(false);
-            this.panelX1.ResumeLayout(false);
-            this.panelX2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownM)).EndInit();
+            this.panelR.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownR)).EndInit();
+            this.panelX1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownX1)).EndInit();
+            this.panelX2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownX2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
